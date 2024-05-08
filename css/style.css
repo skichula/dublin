@@ -1,0 +1,40 @@
+#skip{
+    position: absolute;
+    left: -500px;
+}
+#skip:focus{
+    left: 100px;
+}
+body{
+    font-family: ' Inknut Antiqua', Courier, monospace;
+}
+h1{
+    font-family: Luminari, fantasy;
+    font-size: 50px;
+}
+nav{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(249, 171, 64);
+    width: 100%;
+    padding: 10px
+
+}
+nav a{
+    text-decoration: none;
+    color: #4b4a4a;
+    margin: 10px;
+    border-radius: 10%;
+}
+nav a:hover {
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 10px;
+}
+nav a:focus {
+    background-color: #6d6d6d;
+    color: #000;
+    padding: 10px;
+}
+ul
