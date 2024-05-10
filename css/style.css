@@ -4,6 +4,7 @@ html{
 #skip{
     position: relative;
     left: -500px;
+    
 }
 #skip:focus{
     left:15px;
@@ -18,22 +19,24 @@ h1{
     font-size: 30px;
     text-align: center;
     background-color: #88a75d;
-    padding: 5px;
-    width: 70%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
     margin: 0px auto;
 }
-/* h2{
-
-} */
 nav{
+    /* position: fixed;
+    top: 0; */
     text-align: center;
     font-weight: bold;
     line-height: 40px;
     background: #88a75d;
     border-top: solid 4px rgb(249, 171, 64);
-    padding: 5px;
-    width: 70%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
     margin: 0px auto;
+    /* z-index: 1000; */
 }
 nav a{
     text-decoration: none;
@@ -59,9 +62,12 @@ nav a:focus {
     border-bottom-right-radius: 0px;
     padding: 10px
 }
-/* .current::after{
-    content:'&#9752;'
-} */
+.current::before{
+    content:'\2618  ';
+}
+.current::after{
+    content:' \2618';
+}
 .image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
