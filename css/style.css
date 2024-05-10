@@ -21,8 +21,9 @@ h1{
     background-color: #88a75d;
     padding-top: 12px;
     padding-bottom: 12px;
+    margin-right: 5px;
     width: 100%;
-    margin: 0px auto;
+    margin: 0px 5px 0px 5px;
 }
 nav{
     /* position: fixed;
@@ -35,7 +36,7 @@ nav{
     padding-top: 6px;
     padding-bottom: 6px;
     width: 100%;
-    margin: 0px auto;
+    margin: 0px 5px 0px 5px;
     /* z-index: 1000; */
 }
 nav a{
@@ -71,7 +72,7 @@ nav a:focus {
 .image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    margin: 0 auto;
+    margin: 5px;
     grid-gap: 5%
 }
 .image-grid .image-container {
