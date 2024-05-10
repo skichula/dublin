@@ -6,21 +6,25 @@ html{
     left: -500px;
 }
 #skip:focus{
-    left: 2px;
+    left:15px;
     transition: .75s
 }
 body{
-    font-family: ' Inknut Antiqua', Courier, monospace;
+    font-family: optima, sans-serif;
+    font-size: 18px
 }
 h1{
     font-family: Luminari, fantasy;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     background-color: #88a75d;
     padding: 5px;
-    width: 90%;
+    width: 70%;
     margin: 0px auto;
 }
+/* h2{
+
+} */
 nav{
     text-align: center;
     font-weight: bold;
@@ -28,7 +32,7 @@ nav{
     background: #88a75d;
     border-top: solid 4px rgb(249, 171, 64);
     padding: 5px;
-    width: 90%;
+    width: 70%;
     margin: 0px auto;
 }
 nav a{
@@ -38,20 +42,34 @@ nav a{
     border-radius: 10%;
 }
 nav a:hover {
-    background-color: #f4f4f4;
+    background-color: #c0dc99;
     color: #000;
-    padding: 10px;
+    padding: 10px; 
 }
 nav a:focus {
-    background-color: #6d6d6d;
+    background-color: #b4b4b4;
     color: #000;
     padding: 10px;
 }
+.current{
+    font-size: 18px;
+    font-weight: bolder;
+    border-bottom: solid 4px rgb(249, 171, 64);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px
+}
+/* .current::after{
+    content:'&#9752;'
+} */
 .image-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; 
     margin: 0 auto;
     grid-gap: 5%
+}
+.image-grid .image-container {
+    position: relative;
 }
 .image-grid img {
     width: 80%;
@@ -59,8 +77,35 @@ nav a:focus {
     border-radius: 10%;
     margin: auto;
 }
-.image-grid img:hover, .image-grid img:focus{
-    opacity: 50%;
+/* Overlay styles */
+.image-grid .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-grid .text {
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    text-align: center;
+    padding: 10px;
+    visibility: hidden;
+}
+.image-grid .image-container:hover .overlay {
+    opacity: 1;
+}
+.image-grid .image-container:hover .text {
+    visibility: visible;
+}
+/* Adjusted styles for hover and focus */
+.image-grid .image-container:hover img, 
+.image-grid .image-container:focus img {
+    opacity: 0.4;
 }
 footer {
     margin-top: 100px;
