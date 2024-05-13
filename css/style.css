@@ -72,7 +72,7 @@ nav a:focus {
     display: grid;
     grid-template-columns: 1fr; 
     margin: 5px;
-    grid-gap: 5%
+    grid-gap: 10px
 }
 .image-grid .image-container {
     position: relative;
@@ -80,7 +80,7 @@ nav a:focus {
     text-align: center;
 }
 .image-grid img {
-    width: 80%;
+    width: 100%;
     margin: auto;
     align-items: center;
 }
@@ -110,14 +110,10 @@ nav a:focus {
     visibility: visible;
 }
 /* Adjusted styles for hover and focus */
-.image-grid .image-container:hover img, 
+/* .image-grid .image-container:hover img, 
 .image-grid .image-container:focus img {
     opacity: 0.4;
 } */
-footer {
-    margin-top: 100px;
-}
-
 
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -144,15 +140,13 @@ footer {
 }
 @media screen and (min-width: 760px){
     .image-grid{
-        grid-template-columns: 45% 45%;
-        grid-gap: 5%;
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 5%; */
         justify-content: center;
 }
 }
 @media screen and (min-width: 995px){
     .image-grid{
         grid-template-columns: 30% 30% 30%;
-        grid-gap: 5%;
-        justify-content: center;
 }
 }
