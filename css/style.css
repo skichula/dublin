@@ -26,8 +26,9 @@ h1{
     margin: 0px 5px 0px 5px;
 }
 nav{
-    /* position: fixed;
+    /* position:fixed;
     top: 0; */
+    width: 100%;
     text-align: center;
     font-weight: bold;
     line-height: 40px;
@@ -35,9 +36,7 @@ nav{
     border-top: solid 4px rgb(249, 171, 64);
     padding-top: 6px;
     padding-bottom: 6px;
-    width: 100%;
     margin: 0px 5px 0px 5px;
-    /* z-index: 1000; */
 }
 nav a{
     text-decoration: none;
@@ -86,7 +85,7 @@ nav a:focus {
     align-items: center;
 }
 /* Overlay styles */
-.image-grid .overlay {
+/* .image-grid .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -114,7 +113,7 @@ nav a:focus {
 .image-grid .image-container:hover img, 
 .image-grid .image-container:focus img {
     opacity: 0.4;
-}
+} */
 footer {
     margin-top: 100px;
 }
