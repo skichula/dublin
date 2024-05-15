@@ -10,9 +10,17 @@ html{
     left:15px;
     transition: .75s
 }
+#about{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+}
+#Sarah{
+    border-radius: 10%;
+}
 body{
-    font-family: optima, sans-serif;
-    font-size: 18px
+    font-family: Courier, monospace;
+    font-size: 16px;
 }
 h1{
     font-family: Luminari, fantasy;
@@ -25,8 +33,43 @@ h1{
     width: 100%;
     margin: 0px 5px 0px 5px;
 }
+h2{
+    font-family: "Raleway Heavy";
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 60px;
+    text-align: center;
+}
+h3{
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+h4{
+    font-family: "Roboto Condensed";
+    text-transform: small-caps;
+    letter-spacing: 1.25px;
+    font-size: 20px;
+}
+.special-heading{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: rgba(255, 255, 255, .4);
+    padding: 10px 20px;
+}
+.glendalough{
+    background-image: url("../images/glenbanner.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 nav{
-    /* position:fixed;
+    /* position:absolute;
     top: 0; */
     width: 100%;
     text-align: center;
@@ -42,7 +85,6 @@ nav a{
     text-decoration: none;
     color: #000000;
     margin: 10px;
-    border-radius: 10%;
 }
 nav a:hover {
     background-color: #c0dc99;
@@ -70,19 +112,65 @@ nav a:focus {
 }
 .image-grid {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     margin: 5px;
     grid-gap: 10px
 }
 .image-grid .image-container {
     position: relative;
-    /* border: solid rgb(247, 184, 96) 2px; */
     text-align: center;
 }
 .image-grid img {
     width: 100%;
     margin: auto;
     align-items: center;
+}
+.image-grid img:last-child {
+    margin-right: auto;
+}
+.full-height img {
+    height: 100%;
+}
+.image-grid img:last-child {
+    margin-left: auto;
+    margin-right: auto
+}
+.image-grid img:hover{
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
+}
+.image-grid img:focus{
+    opacity: 50%;
+}
+.image-grid img:hover{
+    opacity: 50%;
+    transition: opacity 2s 0.3 ease;
+}
+figcaption{
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+}
+.image-grid img:focus + figcaption {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.image-grid img:hover + figcaption {
+    opacity: 1;
+    transition: opacity 2s  0.3s ease;
+}
+.video-grid {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    grid-gap: 10px;
+    padding: 10px;
 }
 /* Overlay styles */
 /* .image-grid .overlay {
@@ -141,12 +229,17 @@ nav a:focus {
 @media screen and (min-width: 760px){
     .image-grid{
         grid-template-columns: 1fr 1fr;
-        /* grid-gap: 5%; */
         justify-content: center;
+}
+    .image-grid img:last-child {
+    margin-right: auto;
 }
 }
 @media screen and (min-width: 995px){
     .image-grid{
         grid-template-columns: 30% 30% 30%;
+}
+.image-grid img:nth-child(4n) {
+   grid-column: 2/3;
 }
 }

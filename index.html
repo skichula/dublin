@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- https://www.favicon.cc/ -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" href="images/favicon.png">
     <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 <header>
     <h1>Exploring Ireland: A Study Abroad Journey &#127470&#127466</h1>
     <nav>
-        <a href="index.html" class="current">About Us</a>
+        <a href="index.html" class="current">About Me</a>
         <a href="dublin.html">Dublin</a>
         <a href="kilkenny.html">Glendalough & Kilkenny</a>
         <a href="galway.html">Galway</a>
@@ -29,8 +29,11 @@
     <!-- <h2>Failte go Baile Atha Cliath!</h2> -->
     <section id="about">
         <h2>About Me</h2>
-        <!-- <img src="images/me.jpg" alt=""> -->
-        <p>Welcome to our digital travel log documenting our study abroad adventure in Ireland! Our journey takes us through the bustling streets of Dublin, the historic town of Kilkenny, the vibrant city of Galway, and the breathtaking Cliffs of Moher. Join us as we explore the rich culture, stunning landscapes, and warm hospitality of the Emerald Isle.</p>
+        <figure class="image-container">
+            <a href="images/me.jpg" data-lightbox="image-1" data-title="Hi my name is Sarah and welcome to my site!" data-alt="Sarah at Dunlace Castle"><img id="Sarah" tabindex=0 src="images/me.jpg" alt="Sarah at Dunlace Castle" width="200"></a>
+            
+        </figure>
+        <p>Dia dhuit, is mise Sarah! (Gaelic for "Hi, my name is Sarah!") Welcome to my digital travel log documenting my study abroad adventure in Ireland! Come along with me to journey through the bustling streets of Dublin, the historic towns of Glendalough and Kilkenny, the vibrant city of Galway, the breathtaking Cliffs of Moher, and Northern Ireland.</p>
     </section>
 
     <section id="gallery">
@@ -73,5 +76,6 @@
     <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
 </footer>
 
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
