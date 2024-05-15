@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
     <title>Dublin</title>
     <link rel = "stylesheet" href = "css/style.css">
 </head>
@@ -15,7 +16,8 @@
     <nav>
         <a href="index.html">About Me</a>
         <a href="dublin.html"class="current">Dublin</a>
-        <a href="kilkenny.html">Glendalough & Kilkenny</a>
+        <a href="glendalough.html">Glendalough</a>
+        <a href="kilkenny.html">Kilkenny</a>
         <a href="galway.html">Galway</a>
         <a href="cliffs.html">Cliffs of Moher</a>
         <a href="blog.html">Blog</a>
@@ -24,28 +26,47 @@
 </header>
 
 <main id = "main">
-    <h2>Museums</h2>
-    <h3>EPIC The Irish Emigration Museum</h3>
+    <div class="header-container dublin">
+        <h2 class="special-heading">Dublin</h2>
+    </div>
+    <h3>Museums</h3>
+    <h4>EPIC The Irish Emigration Museum</h4>
     <p>The EPIC Museum is a great exhibition to see and interact with the idea of Irish expanding far beyond the borders of Ireland. Through the stories of Irish emigrants including famous athletes, comedians, scientists, musicians, and political leaders, you can really get a sense of how such a small island can create a deep, vast culture worldwide. Through interactive touch screens, video, audio, and individuals’ stories, the experience is quite engaging. My favorite part was being able to stamp my EPIC passport as I traveled through each exhibit. To ensure you get the best deal, you can book tickets online through the <a href="https://epicchq.com/">EPIC Irish Emigration Museum website.</a></p>
     <p>I thought that this quote shown in the exhbit really encapsulates the history of Irish emigration and its impact on the world today:</p>
-    <p>“After all, emigration is not just a chronicle of sorrow and regret. It is also a powerful story of contribution and adaptation. In fact, I have become more convinced each year that this great narrative of dispossession and belonging, which so often had its origins in sorrows and leave-taking, has become, with a certain amount of historic irony, one of the treasures of our society.” –Mary Robinson (February 2, 1995)</p>
+    <p class="quote">“After all, emigration is not just a chronicle of sorrow and regret. It is also a powerful story of contribution and adaptation. In fact, I have become more convinced each year that this great narrative of dispossession and belonging, which so often had its origins in sorrows and leave-taking, has become, with a certain amount of historic irony, one of the treasures of our society.” –Mary Robinson (February 2, 1995)</p>
     <div class="video-grid">
         <figure>
-            <video tabindex="0" width="420" height="340" controls>
+            <video tabindex="0" width="420" height="340" controls muted>
                 <source src="images/epic_passport.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <figcaption>The EPIC Museum Passport being stamped after visiting the Hunger, Work, Community exhibit.</figcaption>
         </figure>
         <figure>
-            <video tabindex="0" width="420" height="340" controls>
+            <video tabindex="0" width="420" height="340" controls muted>
                 <source src="images/epic_pubquiz.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <figcaption>The Irish Pub Quiz in the Eating and Drinking exhibit.</figcaption>
         </figure>
     </div>
-    
+    <h3>Restaurants</h3>
+    <h4>Alma</h4>
+    <p>A quaint restaurant tucked away in the Portobello area serving classic breakfast options with an Argentinian twist serves incredible brunch. There is limited seating, so if you want to make plans to go I would recommend <a href=https://www.alma.ie/book/">booking a table!</a> I would definitely recommend the Choripan Argento for a flavorful and satifying meal.</p>
+    <div class="image-grid">
+        <figure class="image-container">
+            <img tabindex=0 src="images/alma1.jpeg" alt="Mug of hot chocolate" width="200">
+            <figcaption>The hot chocolate was so rich and delicious, and it's a perfect drink for a cold and rainy day.</figcaption>
+        </figure>
+        <figure class="image-container">
+            <img tabindex=0 src="images/alma3.jpeg" alt="Two plates with an egg dish served with avocado and salsa" width="200">
+            <figcaption>The Choripan Argento includes Argentinian style sausage on organic sourdough with aioli, chimichurri, salsa criolla, caramelized onions,  two free range fried eggs, mixed leaves, sriracha, avocado.</figcaption>
+        </figure>
+        <figure class="image-container">
+            <img tabindex=0 src="images/alma2.jpeg" alt="Crossaint with chocolate coating, sprinkled pistachios, and a strawberry slice" width="200">
+            <figcaption>Alma has a variety of pastry options including gluten free and vegan options, but we went with the classic chocolate crossaint.</figcaption>
+        </figure>
+    </div>
 </main> 
 </body>
 </html>

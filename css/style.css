@@ -11,7 +11,7 @@ html{
     transition: .75s
 }
 #about{
-    display:flex;
+    display: flex;
     justify-content: center;
     margin: 20px;
 }
@@ -42,15 +42,24 @@ h2{
 }
 h3{
     font-family: "Roboto Condensed";
+    font-style: italic;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-size: 20px;
+    font-size: 30px;
 }
 h4{
     font-family: "Roboto Condensed";
     text-transform: small-caps;
     letter-spacing: 1.25px;
     font-size: 20px;
+}
+p{
+    padding: 10px;
+}
+.quote{
+    padding-right: 30px;
+    padding-left: 30px;
+    font-style: italic;
 }
 .special-heading{
     position: absolute;
@@ -68,6 +77,38 @@ h4{
     background-repeat: no-repeat;
     background-size: cover;
     }
+.kilkenny{
+    background-image: url("../images/kilkenny_banner.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.dublin{
+    background-image: url("../images/dublin_banner.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.blog{
+    background-image: url("../images/blog_banner.JPEG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.about{
+    background-image: url("../images/me_wide.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
 nav{
     /* position:absolute;
     top: 0; */
@@ -125,17 +166,10 @@ nav a:focus {
     margin: auto;
     align-items: center;
 }
-.image-grid img:last-child {
-    margin-right: auto;
-}
 .full-height img {
     height: 100%;
 }
-.image-grid img:last-child {
-    margin-left: auto;
-    margin-right: auto
-}
-.image-grid img:hover{
+.image-grid img:focus{
     -webkit-box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
@@ -155,14 +189,13 @@ figcaption{
     font-weight: bold;
     opacity: 0;
 }
-.image-grid img:focus + figcaption {
+.image-grid img:hover + figcaption {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
-
-.image-grid img:hover + figcaption {
+.image-grid img:focus + figcaption {
     opacity: 1;
-    transition: opacity 2s  0.3s ease;
+    transition: opacity 0.3s ease;
 }
 .video-grid {
     display:flex;
@@ -231,15 +264,12 @@ figcaption{
         grid-template-columns: 1fr 1fr;
         justify-content: center;
 }
-    .image-grid img:last-child {
-    margin-right: auto;
-}
 }
 @media screen and (min-width: 995px){
     .image-grid{
         grid-template-columns: 30% 30% 30%;
 }
-.image-grid img:nth-child(4n) {
+/* .image-grid img:nth-child(4n) {
    grid-column: 2/3;
-}
+} */
 }
