@@ -31,7 +31,7 @@ h1{
     padding-bottom: 12px;
     margin-right: 5px;
     width: 100%;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
 }
 h2{
     font-family: "Raleway Heavy";
@@ -63,29 +63,33 @@ p{
 }
 .special-heading{
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 50%);
     background-color: rgba(255, 255, 255, .4);
     padding: 10px 20px;
 }
-.glendalough{
+.parallax{
+    width:100%;
+    margin: auto;
+}
+/* .glendalough{
     background-image: url("../images/glenbanner.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
-.kilkenny{
+    } */
+/* .kilkenny{
     background-image: url("../images/kilkenny_banner.jpeg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
-.dublin{
+    } */
+/* .dublin{
     background-image: url("../images/dublin_banner.jpg");
     min-height: 500px;
     background-attachment: fixed;
@@ -100,7 +104,7 @@ p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
+    } */
 .about{
     background-image: url("../images/me_wide.jpeg");
     min-height: 500px;
@@ -108,7 +112,7 @@ p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-        }
+    }
 nav{
     /* position:absolute;
     top: 0; */
@@ -120,7 +124,7 @@ nav{
     border-top: solid 4px rgb(249, 171, 64);
     padding-top: 6px;
     padding-bottom: 6px;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
 }
 nav a{
     text-decoration: none;
@@ -198,43 +202,14 @@ figcaption{
     transition: opacity 0.3s ease;
 }
 .video-grid {
-    display:flex;
+    display:grid;
     justify-content: center;
     align-items: center;
     margin: 5px;
     grid-gap: 10px;
     padding: 10px;
 }
-/* Overlay styles */
-/* .image-grid .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.image-grid .text {
-    color: rgb(0, 0, 0);
-    font-size: 2vw;
-    text-align: center;
-    padding: 10px;
-    visibility: hidden;
-}
-.image-grid .image-container:hover .overlay {
-    opacity: 1;
-}
-.image-grid .image-container:hover .text {
-    visibility: visible;
-}
-/* Adjusted styles for hover and focus */
-/* .image-grid .image-container:hover img, 
-.image-grid .image-container:focus img {
-    opacity: 0.4;
-} */
+
 
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -262,6 +237,9 @@ figcaption{
 @media screen and (min-width: 760px){
     .image-grid{
         grid-template-columns: 1fr 1fr;
+        justify-content: center;}
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
 }
 }
@@ -269,6 +247,41 @@ figcaption{
     .image-grid{
         grid-template-columns: 30% 30% 30%;
 }
+.parallax{
+    display: none;
+}
+.kilkenny{
+    background-image: url("../images/kilkenny_banner.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.glendalough{
+    background-image: url("../images/glenbanner.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.dublin{
+    background-image: url("../images/dublin_banner.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.blog{
+    background-image: url("../images/blog_banner.JPEG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 /* .image-grid img:nth-child(4n) {
    grid-column: 2/3;
 } */
