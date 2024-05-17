@@ -237,11 +237,12 @@ figcaption{
 @media screen and (min-width: 760px){
     .image-grid{
         grid-template-columns: 1fr 1fr;
-        justify-content: center;}
+        justify-content: center;
+    }
     .video-grid{
         grid-template-columns: 1fr 1fr;
         justify-content: center;
-}
+    }
 }
 @media screen and (min-width: 995px){
     .image-grid{
