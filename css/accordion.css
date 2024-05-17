@@ -1,13 +1,16 @@
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
-    color: #444;
+    color: #484848;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
     cursor: pointer;
     padding: 18px;
+    margin-bottom: 10px;
     width: 100%;
     text-align: left;
     border: none;
-    outline: none;
     transition: 0.4s;
   }
   
@@ -22,4 +25,22 @@
     background-color: white;
     display: none;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-out;
   }
+  .accordion:after {
+    content: 'Click to Read \02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "Minimize \2796"; /* Unicode character for "minus" sign (-) */
+  }
+  /* .blog {
+    display: flex;
+    flex-direction: column-reverse;
+} */
+

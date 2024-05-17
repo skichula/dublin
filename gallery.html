@@ -29,24 +29,54 @@
 
 <main id = "main">
     <h2>Gallery</h2>
-    <div class="image-grid">
-        <img tabindex=0 src="images/gal1.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal2.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal3.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal5.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal6.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal7.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal8.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal9.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal10.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal11.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal12.JPEG" alt="" width="200">
-        <img tabindex=0 src="images/gal12.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal14.JPEG" alt="" width="200">
-        <img tabindex=0 src="images/gal15.JPG" alt="" width="200">
-        <img tabindex=0 src="images/gal16.JPG" alt="" width="200">
+    <div class = "button-grid">
+    <button type="button" data-filter="all" class="all">All</button>
+    <button type="button" data-filter=".category-people">People</button>
+    <button type="button" data-filter=".category-parks">Parks</button>
+    <button type="button" data-filter=".category-northernireland">Northern Ireland</button>
+    <button type="button" data-filter=".category-bray">Bray</button>
     </div>
+    <div class="image-grid container">
+    
+        <div class="mix category-people" data-order="1"><a href="images/gal1.jpg" data-lightbox="image-1" data-title="Sarah & Sophie on Dublin Bus Tour!" data-alt="Sarah and friend smiling while sitting on bus"><img id="gal1" tabindex=0 src="images/gal1.jpg" alt="Sarah and friend smiling while sitting on bus" width="200"></a></div>
+        <div class="mix category-parks" data-order="1"><img tabindex=0 src="images/gal2.JPG" alt="St. Stephen's Park walking path" width="200"></div>
+        <div class="mix category-northernireland" data-order="1"><img tabindex=0 src="images/gal3.JPG" alt="Dunluce Castle sitting on cliff" width="200"></div>
+        <div class="mix category-people" data-order="2"><img tabindex=0 src="images/gal5.JPG" alt="Girl taking a photo with a camera while on hike" width="200"></div>
+        <div class="mix category-northernireland" data-order="2"><img tabindex=0 src="images/gal6.JPG" alt="Sheep grazing in field" width="200"></div>
+        <div class="mix category-northernireland" data-order="3"><img tabindex=0 src="images/gal7.JPG" alt="People climbing Giant’s Causeway rocks" width="200"></div>
+        <div class="mix category-northernireland" data-order="4"><img tabindex=0 src="images/gal8.JPG" alt="Irish sea and cliff side" width="200"></div>
+        <div class="mix category-bray" data-order="2"><img tabindex=0 src="images/gal9.JPG" alt="Large tree with ivy growing on trunk" width="200"></div>
+        <div class="mix category-bray" data-order="4"><img tabindex=0 src="images/gal10.JPG" alt="Yellow flowers by walking trail" width="200"></div>
+        <div class="mix category-bray" data-order="3"><img tabindex=0 src="images/gal11.JPG" alt="Two girls standing at end of cliff overlooking the Irish Sea" width="200"></div>
+        <div class="mix category-bray" data-order="1"><img tabindex=0 src="images/gal12.JPEG" alt="Sarah sitting on cliff overlooking the Irish Sea" width="200"></div>
+        <div class="mix category-people" data-order="3"><img tabindex=0 src="images/gal14.JPEG" alt="Sarah standing in Dunluce castle" width="200"></div>
+        <div class="mix category-people" data-order="3"><img tabindex=0 src="images/gal15.JPG" alt="4 girls standing in front of Glendalough Upper Lake together" width="200"></div>
+        <div class="mix category-people" data-order="3"><img tabindex=0 src="images/gal16.JPG" alt="2 girls smiling while sitting on a bus together" width="200"></div>
+    </div>
+    
+        <!-- <img tabindex=0 src="images/gal1.JPG" alt="Sarah and friend smiling while sitting on bus" width="200">
+        <a href="images/gal1.jpg" data-lightbox="image-1" data-title="Sarah & Sophie on Bus Tour" data-alt="Sarah and friend smiling while sitting on bus"><img id="gal1" tabindex=0 src="images/gal1.jpg" alt="Sarah and friend smiling while sitting on bus" width="200"></a>
+        <img tabindex=0 src="images/gal2.JPG" alt="St. Stephen's Park walking path" width="200">
+        <img tabindex=0 src="images/gal3.JPG" alt="Dunluce Castle sitting on cliff" width="200">
+        <img tabindex=0 src="images/gal5.JPG" alt="Girl taking a photo with a camera while on hike" width="200">
+        <img tabindex=0 src="images/gal6.JPG" alt="Sheep grazing in field" width="200">
+        <img tabindex=0 src="images/gal7.JPG" alt="People climbing Giant’s Causeway rocks" width="200">
+        <img tabindex=0 src="images/gal8.JPG" alt="Irish sea and cliff side" width="200">
+        <img tabindex=0 src="images/gal9.JPG" alt="Large tree with ivy growing on trunk" width="200">
+        <img tabindex=0 src="images/gal10.JPG" alt="Yellow flowers by walking trail" width="200">
+        <img tabindex=0 src="images/gal11.JPG" alt="Two girls standing at end of cliff overlooking the Irish Sea" width="200">
+        <img tabindex=0 src="images/gal12.JPEG" alt="Sarah sitting on cliff overlooking the Irish Sea" width="200">
+        <img tabindex=0 src="images/gal12.JPG" alt="View of Bray from mountain top" width="200">
+        <img tabindex=0 src="images/gal14.JPEG" alt="Sarah standing in Dunluce castle" width="200">
+        <img tabindex=0 src="images/gal15.JPG" alt="" width="200">
+        <img tabindex=0 src="images/gal16.JPG" alt="" width="200"> -->
+    <!-- </div> -->
 </main>
 <script src="dist/js/lightbox-plus-jquery.js"></script> 
+<script src="mix_dist/mixitup.min.js"></script>
+<script>
+    var containerE1 = document.querySelector('.container');
+    var mixer = mixitup(containerE1);
+</script>
 </body>
 </html>

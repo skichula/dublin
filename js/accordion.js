@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("accordion");
+var acc = document.querySelectorAll(".accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -10,9 +10,15 @@ for (i = 0; i < acc.length; i++) {
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
-      panel.style.display = "none";
+      setTimeout(function(){panel.style.display = "none";}, 700);
     } else {
       panel.style.display = "block";
+    }
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
