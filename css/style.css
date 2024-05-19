@@ -265,7 +265,7 @@ h1{
     background-size: cover;
     }
 .dublin{
-    background-image: url("../images/dublin_banner.jpg");
+    background-image: url("../images/dublin_banner2.JPG");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -288,6 +288,22 @@ h1{
     background-repeat: no-repeat;
     background-size:cover;
     }
+.galway{
+    background-image: url("../images/galway_banner2.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+.cliffs{
+        background-image: url("../images/cliffs_banner.JPG");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        }
 #about{
         display: flex;
         justify-content: center;
