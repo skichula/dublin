@@ -49,7 +49,7 @@ h3{
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 24px;
-    color: #436428;
+    color: #487d1d;
 }
 h4{
     font-family: "Roboto Condensed";
@@ -77,6 +77,10 @@ p{
     width:100%;
     margin: auto;
 }
+a {
+    color:#487d1d;
+}
+
 nav{
     /* position:absolute;
     top: 0; */
@@ -134,9 +138,6 @@ nav a:focus {
     margin: auto;
     align-items: center;
 }
-.full-height img {
-    height: 100%;
-}
 .image-grid img:focus{
     -webkit-box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 14px 0px rgba(66, 68, 90, 1);
@@ -144,6 +145,9 @@ nav a:focus {
 }
 .image-grid img:focus{
     opacity: 50%;
+}
+.blog-image img:focus{
+    opacity: 100%;
 }
 .image-grid img:hover{
     opacity: 50%;
