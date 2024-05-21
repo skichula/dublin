@@ -40,7 +40,7 @@ h2{
     font-family: "Raleway Heavy";
     font-style: italic;
     font-variant: small-caps;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
 }
 h3{
@@ -67,7 +67,7 @@ p{
 }
 .special-heading{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, 50%);
     background-color: rgba(255, 255, 255, .4);
@@ -92,22 +92,21 @@ nav{
     border-top: solid 4px rgb(249, 171, 64);
     padding-top: 6px;
     padding-bottom: 6px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 nav a{
     text-decoration: none;
     color: #000000;
     margin: 10px;
+    padding: 10px;
 }
 nav a:hover {
     background-color: #c0dc99;
     color: #000;
-    padding: 10px; 
 }
 nav a:focus {
     background-color: #d5e3c2;
     color: #000;
-    padding: 10px;
 }
 .current{
     font-size: 18px;
@@ -184,13 +183,12 @@ figcaption{
 .button-grid{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-right: 10px;
     margin-left: 10px;
 }
 .gallery-button{
-    width: 20%;
     text-align: center;
-    font-weight: bold;
     font-family: Courier, monospace;
     padding: 10px;
     margin: 10px;
@@ -200,10 +198,12 @@ figcaption{
 .gallery-button:hover {
     background-color: #c0dc99;
     color: #000; 
+    font-weight: bold;
 }
 .gallery-button:focus {
     background-color: #d5e3c2;
     color: #000;
+    font-weight: bold;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -214,6 +214,7 @@ figcaption{
     * {
         	transition: 0s !important;
     }
+
   }
   @media (prefers-color-scheme: dark) {
     nav {
@@ -238,8 +239,9 @@ figcaption{
         grid-template-columns: 1fr 1fr;
         justify-content: center;
     }
-    .special-heading{
-        top: 30%;
+    h2{
+        font-size: 60px;
+    }
 }
 @media screen and (min-width: 995px){
     .image-grid{
