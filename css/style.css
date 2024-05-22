@@ -25,6 +25,13 @@ body{
     font-family: Courier, monospace;
     font-size: 16px;
 }
+/* header{
+    position:sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(136, 167, 93, 0.5); /* Initial background with some transparency */
+    /* transition: background-color 0.3s ease;
+} */
 h1{
     font-family: Luminari, fantasy;
     font-size: 20px;
@@ -50,6 +57,7 @@ h3{
     letter-spacing: 1.5px;
     font-size: 24px;
     color: #487d1d;
+    margin-left: 8px;
 }
 h4{
     font-family: "Roboto Condensed";
@@ -87,10 +95,7 @@ p{
 a {
     color:#487d1d;
 }
-
 nav{
-    /* position:absolute;
-    top: 0; */
     width: 100%;
     text-align: center;
     font-weight: bold;
@@ -103,6 +108,7 @@ nav{
 }
 nav a{
     text-decoration: none;
+    white-space: nowrap;
     color: #000000;
     margin: 10px;
     padding: 10px;
@@ -127,7 +133,7 @@ nav a:focus {
     content:'\2618  ';
 }
 .current::after{
-    content:' \2618';
+    content:' \2618 ';
 }
 .image-grid {
     display: grid;
@@ -219,7 +225,7 @@ figcaption{
       		scroll-behavior: auto; /* Disable smooth scrolling */
     }
 
-    * {
+    .image-grid img:focus + figcaption, .image-grid img:hover + figcaption, #skip:focus, .image-grid img:hover {
         	transition: 0s !important;
     }
 
@@ -243,10 +249,6 @@ figcaption{
         grid-template-columns: 1fr 1fr;
         justify-content: center;
     }
-    .video-grid{
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-    }
     h2{
         font-size: 60px;
     }
@@ -257,6 +259,10 @@ figcaption{
 }
 h1{
     font-size: 30px;
+}
+.video-grid{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 .parallax{
