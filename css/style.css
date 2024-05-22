@@ -67,11 +67,18 @@ p{
 }
 .special-heading{
     position: absolute;
+    width: 200%;
     top: 40%;
     left: 50%;
     transform: translate(-50%, 50%);
     background-color: rgba(255, 255, 255, .4);
     padding: 10px 20px;
+}
+.header-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
 }
 .parallax{
     width:100%;
@@ -193,6 +200,7 @@ figcaption{
     padding: 10px;
     margin: 10px;
     background: #88a75d;
+    color: #000;
     
 }
 .gallery-button:hover {
@@ -263,7 +271,7 @@ h1{
     background-size: cover;
     }
 .glendalough{
-    background-image: url("../images/glenbanner.jpg");
+    background-image: url("../images/glenbanner.JPG");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
